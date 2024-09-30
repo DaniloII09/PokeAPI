@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --background-color: rgb(220, 226, 245);
+  --primary-color: rgb(255, 0, 0);
+  --secondary-color:rgb(0, 0, 124);
+  --add-button: rgb(71, 197, 71);
+  --edit-button: rgb(253, 216, 7);
+  --remove-button: rgb(255, 65, 65);
+  --add-button-hover: rgb(100, 206, 100);
+  --edit-button-hover: rgb(255, 230, 88);
+  --remove-button-hover: rgb(255, 123, 123);
+  --border-radius: 5px;
+  --border-shadow: 0 2px 5px rgba(0, 0 , 0, 0.5);
+}
+
+body
+{
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+h1{
+  color: var(--primary-color);
+  padding: 1em;
+  font-size: 3rem;
+}
+
+form
+{
+  background-color: rgb(155, 194, 209);
+  padding: 2.5em;
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 18px;
+  max-width: 700px;
+  box-shadow: var(--border-shadow);
+}
+
+input[type="number"]
+{
+  padding: 0.5em;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+input[type="submit"]
+{
+  padding: 0.7em;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  border: 0;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type="submit"]:hover
+{
+  background-color: var(--add-button-hover);
+}
+
+.pokemon-area
+{
+  margin: 1em;
+  width: 100vw;
+  max-width: 700px;
+}
+
+ul
+{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li
+{
+  background-color: rgb(255, 214, 214);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+  margin: 1em;
+  color: var(--primary-color);
+  font-size: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: var(--border-shadow);
+}
+
+img
+{
+  height: 10em;
+}
+
+span
+{
+  flex: 1;
+  font-size: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+}
+
+button.edit {
+  background-color: var(--edit-button);
+  color: white;
+}
+
+button.delete {
+  background-color: var(--remove-button);
+  color: white;
+}
+
+button.edit:hover {
+  background-color: var(--edit-button-hover);
+}
+
+button.delete:hover {
+  background-color: var(--remove-button-hover);
+}
