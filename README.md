@@ -1,2 +1,0 @@
-# PokeAPI
-API de Pokemon
